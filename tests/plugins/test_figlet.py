@@ -5,7 +5,7 @@ from doteki.plugins.figlet import run
 def test_prototype():
     settings = {"ascii_text": "hola"} 
     expected = """ _           _       \n| |__   ___ | | __ _ \n| '_ \\ / _ \\| |/ _` |\n| | | | (_) | | (_| |\n|_| |_|\\___/|_|\\__,_|\n                     \n"""
-    expected = "<pre>" + expected + "</pre>"
+    expected = "<pre style='background: none; border: none'>" + expected + "</pre>"
     result = run(settings)
     expected = expected.replace(" ", "S").replace("\n","r")
     result = result.replace(" ", "S").replace("\n","r")
